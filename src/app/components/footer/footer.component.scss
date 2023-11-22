@@ -1,0 +1,19 @@
+footer{
+  width: 100vw;
+  height: 5em;
+  background-color: var(--dark-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    font-size: 3em;
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 1em;
+
+    &:hover{
+      color: var(--yellow);
+    }
+  }
+}

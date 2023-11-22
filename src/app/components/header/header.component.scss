@@ -1,0 +1,36 @@
+header{
+  width: 100vw;
+  height: 6em;
+  background: url('../../../assets/header-bg.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    background-color: rgba(#fff, 0.85);
+    font-family: 'Luckiest Guy', cursive;
+    padding: .2em .7em;
+    border-radius: 1em;
+    font-size: 2.2em;
+  }
+}
+
+@media screen and (min-width: 62em){
+
+  header{
+    background-size: auto;
+  }
+}
+
+@media screen and (min-width: 80em){
+
+  header{
+    height: 7.5em;
+
+    h1{
+      font-size: 3.5em;
+    }
+  }
+}
+

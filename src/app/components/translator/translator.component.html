@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="input-output">
+    <p>Enter text:</p>
+    <textarea #input spellcheck="false" (input)="emptyError = false" [style.border]="emptyError ? '.2em solid var(--warn-red)' : 'none'"></textarea>
+  </div>
+  <div class="buttons-box">
+    <button id="translate-button" (click)="translate(input.value)" (click)="randomEmoji()">Translate</button>
+    <button id="clear-button" (click)="input.value = ''; translation.value = ''">Clear</button>
+  </div>
+  <div class="input-output">
+    <p>Your result:</p>
+    <textarea [(ngModel)]="output" readonly [style.pointerEvents]="'none'" #translation></textarea>
+  </div>
+</div>
